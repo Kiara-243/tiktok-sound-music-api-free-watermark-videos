@@ -1,0 +1,8 @@
+{
+  "type": "SEARCH",
+  "region": "GB",
+  "keyword": "Love You So",
+  "filterBy": "ALL",
+  "sortType": "RELEVANCE",
+  "limit": 20
+}
