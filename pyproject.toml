@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tiktok-sound-music-api-scraper"
+version = "0.1.0"
+description = "TikTok Sound Music API (free-watermark videos) Scraper - sound-based video crawling and music search."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+  { name = "Bitbash", email = "sale@bitbash.dev" }
+]
+dependencies = [
+  "requests>=2.31.0",
+  "jsonschema>=4.20.0"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0.0"
+]
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]
+testpaths = [
+  "tests"
+]
