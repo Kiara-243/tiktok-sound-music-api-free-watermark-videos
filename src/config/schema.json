@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TikTok Sound Music API Scraper Config",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": [
+        "POST_LIST",
+        "SEARCH"
+      ],
+      "description": "Execution mode: POST_LIST for videos by sound URL, SEARCH for music search by keyword."
+    },
+    "region": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 2,
+      "description": "Two-letter region/country code, e.g. GB, US, VN."
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "TikTok sound/music URL used when type is POST_LIST."
+    },
+    "keyword": {
+      "type": "string",
+      "description": "Keyword for SEARCH mode (track titles, artists, or phrases)."
+    },
+    "filterBy": {
+      "type": "string",
+      "description": "Filter used in SEARCH mode, e.g. ALL, TITLE, CREATOR."
+    },
+    "sortType": {
+      "type": "string",
+      "description": "Sort strategy used in SEARCH mode, e.g. RELEVANCE, MOST_USED, MOST_RECENT."
+    },
+    "limit": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 1000,
+      "description": "Max number of items to fetch."
+    }
+  },
+  "required": [
+    "type",
+    "region",
+    "limit"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "POST_LIST"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "url"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "SEARCH"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "keyword"
+        ]
+      }
+    }
+  ],
+  "additionalProperties": false
+}
