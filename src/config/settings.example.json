@@ -1,0 +1,10 @@
+{
+  "type": "POST_LIST",
+  "description": "Example configuration file for TikTok Sound Music API (free-watermark videos) Scraper.",
+  "region": "GB",
+  "url": "https://www.tiktok.com/music/Love-You-So-6728562975734515713",
+  "keyword": "Love You So",
+  "filterBy": "ALL",
+  "sortType": "RELEVANCE",
+  "limit": 20
+}
