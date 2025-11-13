@@ -1,0 +1,51 @@
+[
+  {
+    "type": "POST_LIST",
+    "region": "GB",
+    "url": "https://www.tiktok.com/music/Love-You-So-6728562975734515713",
+    "limit": 20,
+    "added_sound_music_info": {
+      "id": "7229168247013182210",
+      "title": "original sound - vtvgiaitriofficial",
+      "author": "Bigbang Official",
+      "duration": 54,
+      "play_url": "https://example-cdn.tiktok.com/music/7229168238650166018.mp3",
+      "cover_large": "https://example-cdn.tiktok.com/cover/large.jpg",
+      "cover_medium": "https://example-cdn.tiktok.com/cover/medium.jpg",
+      "cover_thumb": "https://example-cdn.tiktok.com/cover/thumb.jpg",
+      "user_count": 1234
+    },
+    "author": {
+      "uid": "6812490744957256705",
+      "unique_id": "vtvgiaitriofficial",
+      "nickname": "Bigbang Official",
+      "signature": "Mời các bạn tải ứng dụng VTV GiảiTrí để xem trọn bộ phim hay độc quyền",
+      "region": "VN",
+      "follower_count": 10000,
+      "following_count": 120,
+      "total_favorited": 450000,
+      "custom_verify": "Verified account"
+    },
+    "aweme_id": "7229167805625847041",
+    "desc": "Cô chủ trọ cho thuê căn phòng hết nước chấm thật #Cuocdoivandepsao",
+    "create_time": 1683171893,
+    "statistics": {
+      "play_count": 585709,
+      "digg_count": 25006,
+      "comment_count": 183,
+      "share_count": 492,
+      "collect_count": 743
+    },
+    "video": {
+      "duration": 54635,
+      "ratio": "540p",
+      "play_addr": "https://example-cdn.tiktok.com/video/422f47cb49d0e1ec.mp4",
+      "download_addr": "https://example-cdn.tiktok.com/video/9f47f3002207837d.mp4",
+      "has_watermark": true
+    },
+    "share_info": {
+      "share_url": "https://www.tiktok.com/@vtvgiaitriofficial/video/7229167805625847041",
+      "share_title": "Check out Bigbang Official’s video! #TikTok"
+    }
+  }
+]
